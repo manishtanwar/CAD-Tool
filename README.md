@@ -1,4 +1,4 @@
-# AutoCAD
+# CAD-Tool
 Projections of 3D objects and reconstruction of 3D object from given projections
 
 
@@ -13,7 +13,7 @@ Projections of 3D objects and reconstruction of 3D object from given projections
 
 ### Build from sources ####
 
-	qmake CAD.pro
+	qmake CAD_Tool.pro
 	make
 
 
