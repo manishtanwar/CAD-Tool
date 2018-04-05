@@ -1,0 +1,153 @@
+\hypertarget{planar__graph__generator_8h}{}\section{planar\+\_\+graph\+\_\+generator.\+h File Reference}
+\label{planar__graph__generator_8h}\index{planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}}
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Full\+\_\+plane.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for planar\+\_\+graph\+\_\+generator.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{planar__graph__generator_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{planar__graph__generator_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_full__plane}{Full\+\_\+plane} $>$ \hyperlink{planar__graph__generator_8h_a2cdfdb8be2237b1c7359b630e9603cfd}{planar\+\_\+graph\+\_\+generator} (std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list, std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ \&e3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function that generates and retunrs planes \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classplane}{plane} $>$ \hyperlink{planar__graph__generator_8h_a8d89f969b47445ac1b5b0cf170401cf1}{construct\+\_\+planes} (std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list, std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ e3d\+\_\+list, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ adj\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function that constructs plane equations \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \hyperlink{planar__graph__generator_8h_a077660a929dda9adf2f8a2daa6a563c1}{get\+\_\+adj\+\_\+list} (std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ e3d\+\_\+list, int no\+\_\+of\+\_\+vertices)
+\begin{DoxyCompactList}\small\item\em function that returns adjacency edges list of the \hyperlink{classvertex__3d}{vertex\+\_\+3d} list \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classplane}{plane} $>$ \hyperlink{planar__graph__generator_8h_a488a27459d11af0b73b76ebe78a8a1c4}{eliminate\+\_\+duplicate\+\_\+planes} (std\+::vector$<$ \hyperlink{classplane}{plane} $>$ planes)
+\begin{DoxyCompactList}\small\item\em function that eliminates duplicate formed planes \end{DoxyCompactList}\item 
+bool \hyperlink{planar__graph__generator_8h_acd37db477f3dd31a46790f5a7ded851c}{check\+\_\+legality} (\hyperlink{class_full__plane}{Full\+\_\+plane} \&f, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ adj\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function returns true if planar graph is legal \end{DoxyCompactList}\item 
+void \hyperlink{planar__graph__generator_8h_a47eedebb44f45567710e54702a5f28b6}{remove\+\_\+dangling} (\hyperlink{class_full__plane}{Full\+\_\+plane} \&f, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ adj\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function that removes dangling and isolated edges on the planar graph using dfs \end{DoxyCompactList}\item 
+void \hyperlink{planar__graph__generator_8h_ad4d8aa255999d941dcc6b5b61ca9d0fd}{remove\+\_\+single\+\_\+plane\+\_\+edges} (std\+::vector$<$ \hyperlink{class_full__plane}{Full\+\_\+plane} $>$ \&f\+\_\+list, std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ \&e3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function that removes those edges which belongs only to one planner graph \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}!check\+\_\+legality@{check\+\_\+legality}}
+\index{check\+\_\+legality@{check\+\_\+legality}!planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{check\+\_\+legality(\+Full\+\_\+plane \&f, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ adj\+\_\+list)}{check_legality(Full_plane &f, std::vector< std::vector< int > > adj_list)}}]{\setlength{\rightskip}{0pt plus 5cm}bool check\+\_\+legality (
+\begin{DoxyParamCaption}
+\item[{{\bf Full\+\_\+plane} \&}]{f, }
+\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$}]{adj\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{planar__graph__generator_8h_acd37db477f3dd31a46790f5a7ded851c}{}\label{planar__graph__generator_8h_acd37db477f3dd31a46790f5a7ded851c}
+
+
+function returns true if planar graph is legal 
+
+
+
+Definition at line 80 of file planar\+\_\+graph\+\_\+generator.\+cpp.
+
+\index{planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}!construct\+\_\+planes@{construct\+\_\+planes}}
+\index{construct\+\_\+planes@{construct\+\_\+planes}!planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{construct\+\_\+planes(std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list, std\+::vector$<$ edge\+\_\+3d $>$ e3d\+\_\+list, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ adj\+\_\+list)}{construct_planes(std::vector< vertex_3d > v3d_list, std::vector< edge_3d > e3d_list, std::vector< std::vector< int > > adj_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf plane} $>$ construct\+\_\+planes (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$}]{e3d\+\_\+list, }
+\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$}]{adj\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{planar__graph__generator_8h_a8d89f969b47445ac1b5b0cf170401cf1}{}\label{planar__graph__generator_8h_a8d89f969b47445ac1b5b0cf170401cf1}
+
+
+function that constructs plane equations 
+
+
+
+Definition at line 27 of file planar\+\_\+graph\+\_\+generator.\+cpp.
+
+\index{planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}!eliminate\+\_\+duplicate\+\_\+planes@{eliminate\+\_\+duplicate\+\_\+planes}}
+\index{eliminate\+\_\+duplicate\+\_\+planes@{eliminate\+\_\+duplicate\+\_\+planes}!planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{eliminate\+\_\+duplicate\+\_\+planes(std\+::vector$<$ plane $>$ planes)}{eliminate_duplicate_planes(std::vector< plane > planes)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf plane} $>$ eliminate\+\_\+duplicate\+\_\+planes (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf plane} $>$}]{planes}
+\end{DoxyParamCaption}
+)}\hypertarget{planar__graph__generator_8h_a488a27459d11af0b73b76ebe78a8a1c4}{}\label{planar__graph__generator_8h_a488a27459d11af0b73b76ebe78a8a1c4}
+
+
+function that eliminates duplicate formed planes 
+
+
+
+Definition at line 57 of file planar\+\_\+graph\+\_\+generator.\+cpp.
+
+\index{planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}!get\+\_\+adj\+\_\+list@{get\+\_\+adj\+\_\+list}}
+\index{get\+\_\+adj\+\_\+list@{get\+\_\+adj\+\_\+list}!planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{get\+\_\+adj\+\_\+list(std\+::vector$<$ edge\+\_\+3d $>$ e3d\+\_\+list, int no\+\_\+of\+\_\+vertices)}{get_adj_list(std::vector< edge_3d > e3d_list, int no_of_vertices)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$int$>$ $>$ get\+\_\+adj\+\_\+list (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$}]{e3d\+\_\+list, }
+\item[{int}]{no\+\_\+of\+\_\+vertices}
+\end{DoxyParamCaption}
+)}\hypertarget{planar__graph__generator_8h_a077660a929dda9adf2f8a2daa6a563c1}{}\label{planar__graph__generator_8h_a077660a929dda9adf2f8a2daa6a563c1}
+
+
+function that returns adjacency edges list of the \hyperlink{classvertex__3d}{vertex\+\_\+3d} list 
+
+
+
+Definition at line 49 of file planar\+\_\+graph\+\_\+generator.\+cpp.
+
+\index{planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}!planar\+\_\+graph\+\_\+generator@{planar\+\_\+graph\+\_\+generator}}
+\index{planar\+\_\+graph\+\_\+generator@{planar\+\_\+graph\+\_\+generator}!planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{planar\+\_\+graph\+\_\+generator(std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list, std\+::vector$<$ edge\+\_\+3d $>$ \&e3d\+\_\+list)}{planar_graph_generator(std::vector< vertex_3d > v3d_list, std::vector< edge_3d > &e3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Full\+\_\+plane} $>$ planar\+\_\+graph\+\_\+generator (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$ \&}]{e3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{planar__graph__generator_8h_a2cdfdb8be2237b1c7359b630e9603cfd}{}\label{planar__graph__generator_8h_a2cdfdb8be2237b1c7359b630e9603cfd}
+
+
+function that generates and retunrs planes 
+
+
+
+Definition at line 8 of file planar\+\_\+graph\+\_\+generator.\+cpp.
+
+\index{planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}!remove\+\_\+dangling@{remove\+\_\+dangling}}
+\index{remove\+\_\+dangling@{remove\+\_\+dangling}!planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{remove\+\_\+dangling(\+Full\+\_\+plane \&f, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ adj\+\_\+list)}{remove_dangling(Full_plane &f, std::vector< std::vector< int > > adj_list)}}]{\setlength{\rightskip}{0pt plus 5cm}void remove\+\_\+dangling (
+\begin{DoxyParamCaption}
+\item[{{\bf Full\+\_\+plane} \&}]{f, }
+\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$}]{adj\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{planar__graph__generator_8h_a47eedebb44f45567710e54702a5f28b6}{}\label{planar__graph__generator_8h_a47eedebb44f45567710e54702a5f28b6}
+
+
+function that removes dangling and isolated edges on the planar graph using dfs 
+
+
+
+Definition at line 90 of file planar\+\_\+graph\+\_\+generator.\+cpp.
+
+\index{planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}!remove\+\_\+single\+\_\+plane\+\_\+edges@{remove\+\_\+single\+\_\+plane\+\_\+edges}}
+\index{remove\+\_\+single\+\_\+plane\+\_\+edges@{remove\+\_\+single\+\_\+plane\+\_\+edges}!planar\+\_\+graph\+\_\+generator.\+h@{planar\+\_\+graph\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{remove\+\_\+single\+\_\+plane\+\_\+edges(std\+::vector$<$ Full\+\_\+plane $>$ \&f\+\_\+list, std\+::vector$<$ edge\+\_\+3d $>$ \&e3d\+\_\+list)}{remove_single_plane_edges(std::vector< Full_plane > &f_list, std::vector< edge_3d > &e3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}void remove\+\_\+single\+\_\+plane\+\_\+edges (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Full\+\_\+plane} $>$ \&}]{f\+\_\+list, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$ \&}]{e3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{planar__graph__generator_8h_ad4d8aa255999d941dcc6b5b61ca9d0fd}{}\label{planar__graph__generator_8h_ad4d8aa255999d941dcc6b5b61ca9d0fd}
+
+
+function that removes those edges which belongs only to one planner graph 
+
+
+
+Definition at line 121 of file planar\+\_\+graph\+\_\+generator.\+cpp.
+

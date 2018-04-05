@@ -1,0 +1,129 @@
+\hypertarget{classplane}{}\section{plane Class Reference}
+\label{classplane}\index{plane@{plane}}
+
+
+class for a plane plane represented as (a,b,c,d) corresponding to the equation ax + by + cz = d  
+
+
+
+
+{\ttfamily \#include $<$structs.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplane_adbf234bb1d3aca2d226e32cb6dea9199}{plane} (float \hyperlink{classplane_a93c319b577955eca012b2866db926c1f}{a}, float \hyperlink{classplane_af4a97d4328067448317dd787e048bc70}{b}, float \hyperlink{classplane_a3024e149a5b2cb4697fa71ae7d539bd1}{c}, float \hyperlink{classplane_a9a3cb65698785bad8199e7afbd083e27}{d})
+\begin{DoxyCompactList}\small\item\em constructor for a plane \end{DoxyCompactList}\item 
+\hyperlink{classplane_ab36174f444a88d3a53d9892828308b48}{plane} ()
+\begin{DoxyCompactList}\small\item\em constructor for a plane \end{DoxyCompactList}\item 
+void \hyperlink{classplane_ab58a90304cbd0db72264be65b3207677}{printit} ()
+\begin{DoxyCompactList}\small\item\em print(); \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classplane_a93c319b577955eca012b2866db926c1f}{a}
+\item 
+float \hyperlink{classplane_af4a97d4328067448317dd787e048bc70}{b}
+\item 
+float \hyperlink{classplane_a3024e149a5b2cb4697fa71ae7d539bd1}{c}
+\item 
+float \hyperlink{classplane_a9a3cb65698785bad8199e7afbd083e27}{d}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class for a plane plane represented as (a,b,c,d) corresponding to the equation ax + by + cz = d 
+
+Definition at line 113 of file structs.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{plane@{plane}!plane@{plane}}
+\index{plane@{plane}!plane@{plane}}
+\subsubsection[{\texorpdfstring{plane(float a, float b, float c, float d)}{plane(float a, float b, float c, float d)}}]{\setlength{\rightskip}{0pt plus 5cm}plane\+::plane (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b, }
+\item[{float}]{c, }
+\item[{float}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{classplane_adbf234bb1d3aca2d226e32cb6dea9199}{}\label{classplane_adbf234bb1d3aca2d226e32cb6dea9199}
+
+
+constructor for a plane 
+
+This constructor edits (a,b,c,d) as following -\/ if d is non-\/zero (a\textquotesingle{},b\textquotesingle{},c\textquotesingle{},d\textquotesingle{}) = (a/d,b/d,c/d,1) else if c is non-\/zero (a\textquotesingle{},b\textquotesingle{},c\textquotesingle{},0) = (a/c,b/c,1,0) else if b is non-\/zero (a\textquotesingle{},b\textquotesingle{},0,0) = (a/b,1,0,0) else (a\textquotesingle{}0,0,0) = (1,0,0,0) 
+
+Definition at line 109 of file structs.\+cpp.
+
+\index{plane@{plane}!plane@{plane}}
+\index{plane@{plane}!plane@{plane}}
+\subsubsection[{\texorpdfstring{plane()}{plane()}}]{\setlength{\rightskip}{0pt plus 5cm}plane\+::plane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classplane_ab36174f444a88d3a53d9892828308b48}{}\label{classplane_ab36174f444a88d3a53d9892828308b48}
+
+
+constructor for a plane 
+
+
+
+Definition at line 99 of file structs.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{plane@{plane}!printit@{printit}}
+\index{printit@{printit}!plane@{plane}}
+\subsubsection[{\texorpdfstring{printit()}{printit()}}]{\setlength{\rightskip}{0pt plus 5cm}void plane\+::printit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classplane_ab58a90304cbd0db72264be65b3207677}{}\label{classplane_ab58a90304cbd0db72264be65b3207677}
+
+
+print(); 
+
+
+
+Definition at line 104 of file structs.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{plane@{plane}!a@{a}}
+\index{a@{a}!plane@{plane}}
+\subsubsection[{\texorpdfstring{a}{a}}]{\setlength{\rightskip}{0pt plus 5cm}float plane\+::a}\hypertarget{classplane_a93c319b577955eca012b2866db926c1f}{}\label{classplane_a93c319b577955eca012b2866db926c1f}
+
+
+Definition at line 115 of file structs.\+h.
+
+\index{plane@{plane}!b@{b}}
+\index{b@{b}!plane@{plane}}
+\subsubsection[{\texorpdfstring{b}{b}}]{\setlength{\rightskip}{0pt plus 5cm}float plane\+::b}\hypertarget{classplane_af4a97d4328067448317dd787e048bc70}{}\label{classplane_af4a97d4328067448317dd787e048bc70}
+
+
+Definition at line 116 of file structs.\+h.
+
+\index{plane@{plane}!c@{c}}
+\index{c@{c}!plane@{plane}}
+\subsubsection[{\texorpdfstring{c}{c}}]{\setlength{\rightskip}{0pt plus 5cm}float plane\+::c}\hypertarget{classplane_a3024e149a5b2cb4697fa71ae7d539bd1}{}\label{classplane_a3024e149a5b2cb4697fa71ae7d539bd1}
+
+
+Definition at line 117 of file structs.\+h.
+
+\index{plane@{plane}!d@{d}}
+\index{d@{d}!plane@{plane}}
+\subsubsection[{\texorpdfstring{d}{d}}]{\setlength{\rightskip}{0pt plus 5cm}float plane\+::d}\hypertarget{classplane_a9a3cb65698785bad8199e7afbd083e27}{}\label{classplane_a9a3cb65698785bad8199e7afbd083e27}
+
+
+Definition at line 118 of file structs.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structs_8h}{structs.\+h}\item 
+/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/\hyperlink{structs_8cpp}{structs.\+cpp}\end{DoxyCompactItemize}

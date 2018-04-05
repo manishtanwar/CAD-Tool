@@ -1,0 +1,176 @@
+\hypertarget{faceloop__generator_8cpp}{}\section{/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/faceloop\+\_\+generator.cpp File Reference}
+\label{faceloop__generator_8cpp}\index{/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/faceloop\+\_\+generator.\+cpp@{/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/faceloop\+\_\+generator.\+cpp}}
+{\ttfamily \#include \char`\"{}include/faceloop\+\_\+generator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}include/general\+\_\+methods.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}include/planar\+\_\+graph\+\_\+generator.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+Include dependency graph for faceloop\+\_\+generator.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{faceloop__generator_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{faceloop__generator_8cpp_a71064b70dc7b2e65c2aa8a0555cf2efd}{epsil}~0.\+000001
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classface__loop}{face\+\_\+loop} $>$ \hyperlink{faceloop__generator_8cpp_ae6b709b480a42b239420e2f968bf4a6c}{generate\+\_\+face\+\_\+loops} (\hyperlink{classplane}{plane} p, std\+::vector$<$ int $>$ vertices\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ \&edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\item 
+bool \hyperlink{faceloop__generator_8cpp_a67ea41ab7b651bc5783a4a43a9e1eaea}{compare\+\_\+angles} (std\+::pair$<$ int, std\+::pair$<$ float, bool $>$ $>$ lhs, std\+::pair$<$ int, std\+::pair$<$ float, bool $>$ $>$ rhs)
+\item 
+void \hyperlink{faceloop__generator_8cpp_a0e4704601381cabb530aa622af4b55d0}{sort\+\_\+edges} (std\+::vector$<$ int $>$ \&v, int i, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \hyperlink{faceloop__generator_8cpp_aadb442650ebd831d3c7fda4a627d1ace}{generate\+\_\+ordered\+\_\+adj\+\_\+list} (std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ int $>$ vertices\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function to generate ordered adj\+\_\+list in clockwise direction \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classbasic__loop}{basic\+\_\+loop} $>$ \hyperlink{faceloop__generator_8cpp_a7a4a04f233606e5f06164dc9a97b47a5}{basic\+\_\+loop\+\_\+generator} (std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ \&edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ vector$<$ int $>$ $>$ ordered\+\_\+adj\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function that generates basic loops \end{DoxyCompactList}\item 
+bool \hyperlink{faceloop__generator_8cpp_a00972a0826ec9a1e09355a4d7085b06b}{is\+\_\+in\+\_\+it} (\hyperlink{classvertex__3d}{vertex\+\_\+3d} v1, \hyperlink{classbasic__loop}{basic\+\_\+loop} b, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\item 
+bool \hyperlink{faceloop__generator_8cpp_afa2e3a07821dc9581a2368710a15211c}{included} (\hyperlink{classbasic__loop}{basic\+\_\+loop} b1, \hyperlink{classbasic__loop}{basic\+\_\+loop} b2, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\item 
+std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ \hyperlink{faceloop__generator_8cpp_a9a32da1f4ab031ab685165a2ac99dab8}{generate\+\_\+inclusion\+\_\+matrix} (std\+::vector$<$ \hyperlink{classbasic__loop}{basic\+\_\+loop} $>$ basic\+\_\+loop\+\_\+list, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function to generate inclusion matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!epsil@{epsil}}
+\index{epsil@{epsil}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{epsil}{epsil}}]{\setlength{\rightskip}{0pt plus 5cm}\#define epsil~0.\+000001}\hypertarget{faceloop__generator_8cpp_a71064b70dc7b2e65c2aa8a0555cf2efd}{}\label{faceloop__generator_8cpp_a71064b70dc7b2e65c2aa8a0555cf2efd}
+
+
+Definition at line 4 of file faceloop\+\_\+generator.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!basic\+\_\+loop\+\_\+generator@{basic\+\_\+loop\+\_\+generator}}
+\index{basic\+\_\+loop\+\_\+generator@{basic\+\_\+loop\+\_\+generator}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{basic\+\_\+loop\+\_\+generator(std\+::vector$<$ edge\+\_\+3d $>$ \&edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ vector$<$ int $>$ $>$ ordered\+\_\+adj\+\_\+list)}{basic_loop_generator(std::vector< edge_3d > &edges_on_the_plane, std::vector< vector< int > > ordered_adj_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf basic\+\_\+loop} $>$ basic\+\_\+loop\+\_\+generator (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$ \&}]{edges\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ vector$<$ int $>$ $>$}]{ordered\+\_\+adj\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8cpp_a7a4a04f233606e5f06164dc9a97b47a5}{}\label{faceloop__generator_8cpp_a7a4a04f233606e5f06164dc9a97b47a5}
+
+
+function that generates basic loops 
+
+
+
+Definition at line 168 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!compare\+\_\+angles@{compare\+\_\+angles}}
+\index{compare\+\_\+angles@{compare\+\_\+angles}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{compare\+\_\+angles(std\+::pair$<$ int, std\+::pair$<$ float, bool $>$ $>$ lhs, std\+::pair$<$ int, std\+::pair$<$ float, bool $>$ $>$ rhs)}{compare_angles(std::pair< int, std::pair< float, bool > > lhs, std::pair< int, std::pair< float, bool > > rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool compare\+\_\+angles (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ int, std\+::pair$<$ float, bool $>$ $>$}]{lhs, }
+\item[{std\+::pair$<$ int, std\+::pair$<$ float, bool $>$ $>$}]{rhs}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8cpp_a67ea41ab7b651bc5783a4a43a9e1eaea}{}\label{faceloop__generator_8cpp_a67ea41ab7b651bc5783a4a43a9e1eaea}
+
+
+Definition at line 111 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!generate\+\_\+face\+\_\+loops@{generate\+\_\+face\+\_\+loops}}
+\index{generate\+\_\+face\+\_\+loops@{generate\+\_\+face\+\_\+loops}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{generate\+\_\+face\+\_\+loops(plane p, std\+::vector$<$ int $>$ vertices\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ edge\+\_\+3d $>$ \&edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{generate_face_loops(plane p, std::vector< int > vertices_on_the_plane, std::vector< edge_3d > &edges_on_the_plane, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf face\+\_\+loop} $>$ generate\+\_\+face\+\_\+loops (
+\begin{DoxyParamCaption}
+\item[{{\bf plane}}]{p, }
+\item[{std\+::vector$<$ int $>$}]{vertices\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$ \&}]{edges\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8cpp_ae6b709b480a42b239420e2f968bf4a6c}{}\label{faceloop__generator_8cpp_ae6b709b480a42b239420e2f968bf4a6c}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & plane for which face\+\_\+loops are being calculated \\
+\hline
+{\em edges\+\_\+on\+\_\+the\+\_\+plane} & vector of the edges which are on this plane \\
+\hline
+{\em v3d\+\_\+list} & vertex list of the 3d object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!generate\+\_\+inclusion\+\_\+matrix@{generate\+\_\+inclusion\+\_\+matrix}}
+\index{generate\+\_\+inclusion\+\_\+matrix@{generate\+\_\+inclusion\+\_\+matrix}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{generate\+\_\+inclusion\+\_\+matrix(std\+::vector$<$ basic\+\_\+loop $>$ basic\+\_\+loop\+\_\+list, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{generate_inclusion_matrix(std::vector< basic_loop > basic_loop_list, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$bool$>$ $>$ generate\+\_\+inclusion\+\_\+matrix (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf basic\+\_\+loop} $>$}]{basic\+\_\+loop\+\_\+list, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8cpp_a9a32da1f4ab031ab685165a2ac99dab8}{}\label{faceloop__generator_8cpp_a9a32da1f4ab031ab685165a2ac99dab8}
+
+
+function to generate inclusion matrix 
+
+
+
+Definition at line 392 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!generate\+\_\+ordered\+\_\+adj\+\_\+list@{generate\+\_\+ordered\+\_\+adj\+\_\+list}}
+\index{generate\+\_\+ordered\+\_\+adj\+\_\+list@{generate\+\_\+ordered\+\_\+adj\+\_\+list}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{generate\+\_\+ordered\+\_\+adj\+\_\+list(std\+::vector$<$ edge\+\_\+3d $>$ edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ int $>$ vertices\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{generate_ordered_adj_list(std::vector< edge_3d > edges_on_the_plane, std::vector< int > vertices_on_the_plane, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$int$>$ $>$ generate\+\_\+ordered\+\_\+adj\+\_\+list (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$}]{edges\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ int $>$}]{vertices\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8cpp_aadb442650ebd831d3c7fda4a627d1ace}{}\label{faceloop__generator_8cpp_aadb442650ebd831d3c7fda4a627d1ace}
+
+
+function to generate ordered adj\+\_\+list in clockwise direction 
+
+
+
+Definition at line 152 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!included@{included}}
+\index{included@{included}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{included(basic\+\_\+loop b1, basic\+\_\+loop b2, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{included(basic_loop b1, basic_loop b2, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}bool included (
+\begin{DoxyParamCaption}
+\item[{{\bf basic\+\_\+loop}}]{b1, }
+\item[{{\bf basic\+\_\+loop}}]{b2, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8cpp_afa2e3a07821dc9581a2368710a15211c}{}\label{faceloop__generator_8cpp_afa2e3a07821dc9581a2368710a15211c}
+
+
+Definition at line 375 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!is\+\_\+in\+\_\+it@{is\+\_\+in\+\_\+it}}
+\index{is\+\_\+in\+\_\+it@{is\+\_\+in\+\_\+it}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{is\+\_\+in\+\_\+it(vertex\+\_\+3d v1, basic\+\_\+loop b, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{is_in_it(vertex_3d v1, basic_loop b, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}bool is\+\_\+in\+\_\+it (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex\+\_\+3d}}]{v1, }
+\item[{{\bf basic\+\_\+loop}}]{b, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8cpp_a00972a0826ec9a1e09355a4d7085b06b}{}\label{faceloop__generator_8cpp_a00972a0826ec9a1e09355a4d7085b06b}
+
+
+Definition at line 222 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}!sort\+\_\+edges@{sort\+\_\+edges}}
+\index{sort\+\_\+edges@{sort\+\_\+edges}!faceloop\+\_\+generator.\+cpp@{faceloop\+\_\+generator.\+cpp}}
+\subsubsection[{\texorpdfstring{sort\+\_\+edges(std\+::vector$<$ int $>$ \&v, int i, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{sort_edges(std::vector< int > &v, int i, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}void sort\+\_\+edges (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ int $>$ \&}]{v, }
+\item[{int}]{i, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8cpp_a0e4704601381cabb530aa622af4b55d0}{}\label{faceloop__generator_8cpp_a0e4704601381cabb530aa622af4b55d0}
+
+
+Definition at line 121 of file faceloop\+\_\+generator.\+cpp.
+

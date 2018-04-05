@@ -1,0 +1,114 @@
+\hypertarget{faceloop__generator_8h}{}\section{faceloop\+\_\+generator.\+h File Reference}
+\label{faceloop__generator_8h}\index{faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}}
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Full\+\_\+plane.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for faceloop\+\_\+generator.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{faceloop__generator_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{faceloop__generator_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbasic__loop}{basic\+\_\+loop}
+\item 
+class \hyperlink{classface__loop}{face\+\_\+loop}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classface__loop}{face\+\_\+loop} $>$ \hyperlink{faceloop__generator_8h_ae6b709b480a42b239420e2f968bf4a6c}{generate\+\_\+face\+\_\+loops} (\hyperlink{classplane}{plane} p, std\+::vector$<$ int $>$ vertices\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ \&edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \hyperlink{faceloop__generator_8h_aadb442650ebd831d3c7fda4a627d1ace}{generate\+\_\+ordered\+\_\+adj\+\_\+list} (std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ int $>$ vertices\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function to generate ordered adj\+\_\+list in clockwise direction \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classbasic__loop}{basic\+\_\+loop} $>$ \hyperlink{faceloop__generator_8h_a7a4a04f233606e5f06164dc9a97b47a5}{basic\+\_\+loop\+\_\+generator} (std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ \&edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ vector$<$ int $>$ $>$ ordered\+\_\+adj\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function that generates basic loops \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ \hyperlink{faceloop__generator_8h_a9a32da1f4ab031ab685165a2ac99dab8}{generate\+\_\+inclusion\+\_\+matrix} (std\+::vector$<$ \hyperlink{classbasic__loop}{basic\+\_\+loop} $>$ basic\+\_\+loop\+\_\+list, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function to generate inclusion matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}!basic\+\_\+loop\+\_\+generator@{basic\+\_\+loop\+\_\+generator}}
+\index{basic\+\_\+loop\+\_\+generator@{basic\+\_\+loop\+\_\+generator}!faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{basic\+\_\+loop\+\_\+generator(std\+::vector$<$ edge\+\_\+3d $>$ \&edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ vector$<$ int $>$ $>$ ordered\+\_\+adj\+\_\+list)}{basic_loop_generator(std::vector< edge_3d > &edges_on_the_plane, std::vector< vector< int > > ordered_adj_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf basic\+\_\+loop} $>$ basic\+\_\+loop\+\_\+generator (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$ \&}]{edges\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ vector$<$ int $>$ $>$}]{ordered\+\_\+adj\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8h_a7a4a04f233606e5f06164dc9a97b47a5}{}\label{faceloop__generator_8h_a7a4a04f233606e5f06164dc9a97b47a5}
+
+
+function that generates basic loops 
+
+
+
+Definition at line 168 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}!generate\+\_\+face\+\_\+loops@{generate\+\_\+face\+\_\+loops}}
+\index{generate\+\_\+face\+\_\+loops@{generate\+\_\+face\+\_\+loops}!faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{generate\+\_\+face\+\_\+loops(plane p, std\+::vector$<$ int $>$ vertices\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ edge\+\_\+3d $>$ \&edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{generate_face_loops(plane p, std::vector< int > vertices_on_the_plane, std::vector< edge_3d > &edges_on_the_plane, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf face\+\_\+loop} $>$ generate\+\_\+face\+\_\+loops (
+\begin{DoxyParamCaption}
+\item[{{\bf plane}}]{p, }
+\item[{std\+::vector$<$ int $>$}]{vertices\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$ \&}]{edges\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8h_ae6b709b480a42b239420e2f968bf4a6c}{}\label{faceloop__generator_8h_ae6b709b480a42b239420e2f968bf4a6c}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & plane for which face\+\_\+loops are being calculated \\
+\hline
+{\em edges\+\_\+on\+\_\+the\+\_\+plane} & vector of the edges which are on this plane \\
+\hline
+{\em v3d\+\_\+list} & vertex list of the 3d object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}!generate\+\_\+inclusion\+\_\+matrix@{generate\+\_\+inclusion\+\_\+matrix}}
+\index{generate\+\_\+inclusion\+\_\+matrix@{generate\+\_\+inclusion\+\_\+matrix}!faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{generate\+\_\+inclusion\+\_\+matrix(std\+::vector$<$ basic\+\_\+loop $>$ basic\+\_\+loop\+\_\+list, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{generate_inclusion_matrix(std::vector< basic_loop > basic_loop_list, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$bool$>$ $>$ generate\+\_\+inclusion\+\_\+matrix (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf basic\+\_\+loop} $>$}]{basic\+\_\+loop\+\_\+list, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8h_a9a32da1f4ab031ab685165a2ac99dab8}{}\label{faceloop__generator_8h_a9a32da1f4ab031ab685165a2ac99dab8}
+
+
+function to generate inclusion matrix 
+
+
+
+Definition at line 392 of file faceloop\+\_\+generator.\+cpp.
+
+\index{faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}!generate\+\_\+ordered\+\_\+adj\+\_\+list@{generate\+\_\+ordered\+\_\+adj\+\_\+list}}
+\index{generate\+\_\+ordered\+\_\+adj\+\_\+list@{generate\+\_\+ordered\+\_\+adj\+\_\+list}!faceloop\+\_\+generator.\+h@{faceloop\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{generate\+\_\+ordered\+\_\+adj\+\_\+list(std\+::vector$<$ edge\+\_\+3d $>$ edges\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ int $>$ vertices\+\_\+on\+\_\+the\+\_\+plane, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{generate_ordered_adj_list(std::vector< edge_3d > edges_on_the_plane, std::vector< int > vertices_on_the_plane, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$int$>$ $>$ generate\+\_\+ordered\+\_\+adj\+\_\+list (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$}]{edges\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ int $>$}]{vertices\+\_\+on\+\_\+the\+\_\+plane, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{faceloop__generator_8h_aadb442650ebd831d3c7fda4a627d1ace}{}\label{faceloop__generator_8h_aadb442650ebd831d3c7fda4a627d1ace}
+
+
+function to generate ordered adj\+\_\+list in clockwise direction 
+
+
+
+Definition at line 152 of file faceloop\+\_\+generator.\+cpp.
+

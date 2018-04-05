@@ -1,0 +1,297 @@
+\hypertarget{classobject__2d}{}\section{object\+\_\+2d Class Reference}
+\label{classobject__2d}\index{object\+\_\+2d@{object\+\_\+2d}}
+
+
+representation of \hyperlink{classobject__2d}{object\+\_\+2d}  
+
+
+
+
+{\ttfamily \#include $<$object\+\_\+2d.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classobject__2d_a3ed4eb36446c5dacac7cd84a3f73ba1f}{object\+\_\+2d} (std\+::vector$<$ \hyperlink{classvertex__2d}{vertex\+\_\+2d} $>$ \hyperlink{classobject__2d_aedcad81ef4cdb308ffade7bcf7de4cc2}{T\+\_\+vertices}, std\+::vector$<$ \hyperlink{classvertex__2d}{vertex\+\_\+2d} $>$ \hyperlink{classobject__2d_aa12b4ac9f646748a83b22c7a81ff1b7c}{F\+\_\+vertices}, std\+::vector$<$ \hyperlink{classvertex__2d}{vertex\+\_\+2d} $>$ \hyperlink{classobject__2d_a722b0505e408b8864809a7ae55c86df4}{S\+\_\+vertices}, std\+::vector$<$ \hyperlink{classedge__2d__v2v}{edge\+\_\+2d\+\_\+v2v} $>$ \hyperlink{classobject__2d_a1543063eb017187a7582821d1ec07faf}{T\+\_\+edges}, std\+::vector$<$ \hyperlink{classedge__2d__v2v}{edge\+\_\+2d\+\_\+v2v} $>$ \hyperlink{classobject__2d_abb23f1e7a00cef6deba5d997ff40a751}{F\+\_\+edges}, std\+::vector$<$ \hyperlink{classedge__2d__v2v}{edge\+\_\+2d\+\_\+v2v} $>$ \hyperlink{classobject__2d_ad13cc39539ebc9c5634ae59dea81e33c}{S\+\_\+edges})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classobject__2d_a52104b7df912451e4dfdafeb2db8528f}{object\+\_\+2d} (std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list, std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ e3d\+\_\+list, std\+::vector$<$ std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ $>$ surface\+\_\+list)
+\item 
+void \hyperlink{classobject__2d_a900bb547b93a4c92f3daf3acaf580333}{add\+\_\+\+T\+\_\+vertex} (\hyperlink{classvertex__2d}{vertex\+\_\+2d} v)
+\begin{DoxyCompactList}\small\item\em function to add a vertex in the vector of vertices of Top-\/view \end{DoxyCompactList}\item 
+void \hyperlink{classobject__2d_af46c50b2bcb0fd9188b35b818c960e8d}{add\+\_\+\+F\+\_\+vertex} (\hyperlink{classvertex__2d}{vertex\+\_\+2d} v)
+\begin{DoxyCompactList}\small\item\em function to add a vertex in the vector of vertices of Front-\/view \end{DoxyCompactList}\item 
+void \hyperlink{classobject__2d_a49f8d6d9a110979ac19eb40817d4d0ca}{add\+\_\+\+S\+\_\+vertex} (\hyperlink{classvertex__2d}{vertex\+\_\+2d} v)
+\begin{DoxyCompactList}\small\item\em function to add a vertex in the vector of vertices of Side-\/view \end{DoxyCompactList}\item 
+void \hyperlink{classobject__2d_adfe9c8ca6c38cf14338c1e37bb4fcc1f}{add\+\_\+\+T\+\_\+edge} (\hyperlink{classedge__2d}{edge\+\_\+2d} e)
+\begin{DoxyCompactList}\small\item\em function to add an edge in the vector of edges of Top-\/view \end{DoxyCompactList}\item 
+void \hyperlink{classobject__2d_ac6449512672c0ff45ca163c374b85466}{add\+\_\+\+F\+\_\+edge} (\hyperlink{classedge__2d}{edge\+\_\+2d} e)
+\begin{DoxyCompactList}\small\item\em function to add an edge in the vector of edges of Front-\/view \end{DoxyCompactList}\item 
+void \hyperlink{classobject__2d_a85c014c6fbb2c21ef42a06711dd0a277}{add\+\_\+\+S\+\_\+edge} (\hyperlink{classedge__2d}{edge\+\_\+2d} e)
+\begin{DoxyCompactList}\small\item\em function to add an edge in the vector of edges of Side-\/view \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classvertex__2d}{vertex\+\_\+2d} $>$ \hyperlink{classobject__2d_a68a06e7feae6a6cae1803f54b8a3a07b}{converter} (\hyperlink{classvertex__3d}{vertex\+\_\+3d} v)
+\begin{DoxyCompactList}\small\item\em function to convert 3D vertex to 2D vertex and returns in the form of (v\+\_\+T,v\+\_\+F,v\+\_\+S) \end{DoxyCompactList}\item 
+std\+::vector$<$ bool $>$ \hyperlink{classobject__2d_a7c2ffd764cf62444bdffdda7abef652c}{checker} (\hyperlink{classedge__3d}{edge\+\_\+3d} e)
+\begin{DoxyCompactList}\small\item\em function to check that an edge in 3D is also an edge in top ,front and side views \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classvertex__2d}{vertex\+\_\+2d} $>$ \hyperlink{classobject__2d_aedcad81ef4cdb308ffade7bcf7de4cc2}{T\+\_\+vertices}
+\begin{DoxyCompactList}\small\item\em vector of co-\/ordinates of vertices in top-\/view \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classvertex__2d}{vertex\+\_\+2d} $>$ \hyperlink{classobject__2d_aa12b4ac9f646748a83b22c7a81ff1b7c}{F\+\_\+vertices}
+\begin{DoxyCompactList}\small\item\em vector of co-\/ordinates of vertices in front-\/view \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classvertex__2d}{vertex\+\_\+2d} $>$ \hyperlink{classobject__2d_a722b0505e408b8864809a7ae55c86df4}{S\+\_\+vertices}
+\begin{DoxyCompactList}\small\item\em vector of co-\/ordinates of vertices in side-\/view \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classedge__2d}{edge\+\_\+2d} $>$ \hyperlink{classobject__2d_a1543063eb017187a7582821d1ec07faf}{T\+\_\+edges}
+\begin{DoxyCompactList}\small\item\em vector of edges in top-\/view \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classedge__2d}{edge\+\_\+2d} $>$ \hyperlink{classobject__2d_abb23f1e7a00cef6deba5d997ff40a751}{F\+\_\+edges}
+\begin{DoxyCompactList}\small\item\em vector of edges in front-\/view \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classedge__2d}{edge\+\_\+2d} $>$ \hyperlink{classobject__2d_ad13cc39539ebc9c5634ae59dea81e33c}{S\+\_\+edges}
+\begin{DoxyCompactList}\small\item\em vector of edges in side-\/view \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+representation of \hyperlink{classobject__2d}{object\+\_\+2d} 
+
+Definition at line 11 of file object\+\_\+2d.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{object\+\_\+2d@{object\+\_\+2d}!object\+\_\+2d@{object\+\_\+2d}}
+\index{object\+\_\+2d@{object\+\_\+2d}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{object\+\_\+2d(std\+::vector$<$ vertex\+\_\+2d $>$ T\+\_\+vertices, std\+::vector$<$ vertex\+\_\+2d $>$ F\+\_\+vertices, std\+::vector$<$ vertex\+\_\+2d $>$ S\+\_\+vertices, std\+::vector$<$ edge\+\_\+2d\+\_\+v2v $>$ T\+\_\+edges, std\+::vector$<$ edge\+\_\+2d\+\_\+v2v $>$ F\+\_\+edges, std\+::vector$<$ edge\+\_\+2d\+\_\+v2v $>$ S\+\_\+edges)}{object_2d(std::vector< vertex_2d > T_vertices, std::vector< vertex_2d > F_vertices, std::vector< vertex_2d > S_vertices, std::vector< edge_2d_v2v > T_edges, std::vector< edge_2d_v2v > F_edges, std::vector< edge_2d_v2v > S_edges)}}]{\setlength{\rightskip}{0pt plus 5cm}object\+\_\+2d\+::object\+\_\+2d (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf vertex\+\_\+2d} $>$}]{T\+\_\+vertices, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+2d} $>$}]{F\+\_\+vertices, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+2d} $>$}]{S\+\_\+vertices, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+2d\+\_\+v2v} $>$}]{T\+\_\+edges, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+2d\+\_\+v2v} $>$}]{F\+\_\+edges, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+2d\+\_\+v2v} $>$}]{S\+\_\+edges}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_a3ed4eb36446c5dacac7cd84a3f73ba1f}{}\label{classobject__2d_a3ed4eb36446c5dacac7cd84a3f73ba1f}
+
+
+Constructor. 
+
+
+
+Definition at line 6 of file object\+\_\+2d.\+cpp.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!object\+\_\+2d@{object\+\_\+2d}}
+\index{object\+\_\+2d@{object\+\_\+2d}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{object\+\_\+2d(std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list, std\+::vector$<$ edge\+\_\+3d $>$ e3d\+\_\+list, std\+::vector$<$ std\+::vector$<$ edge\+\_\+3d $>$ $>$ surface\+\_\+list)}{object_2d(std::vector< vertex_3d > v3d_list, std::vector< edge_3d > e3d_list, std::vector< std::vector< edge_3d > > surface_list)}}]{\setlength{\rightskip}{0pt plus 5cm}object\+\_\+2d\+::object\+\_\+2d (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$}]{e3d\+\_\+list, }
+\item[{std\+::vector$<$ std\+::vector$<$ {\bf edge\+\_\+3d} $>$ $>$}]{surface\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_a52104b7df912451e4dfdafeb2db8528f}{}\label{classobject__2d_a52104b7df912451e4dfdafeb2db8528f}
+This constructor consists -\/
+\begin{DoxyEnumerate}
+\item Converting the 3D vertex into its projected vertex
+\item Adding the obtained projected vertex in top, front and side vertex list
+\item There should not be an edge between overlapping points
+\item Adding edges to the front, top and side edge list if it is an egde in the solid
+\item On the basis of checker result edge is added in the edgelist of 2D object 
+\end{DoxyEnumerate}
+
+Definition at line 94 of file object\+\_\+2d.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{object\+\_\+2d@{object\+\_\+2d}!add\+\_\+\+F\+\_\+edge@{add\+\_\+\+F\+\_\+edge}}
+\index{add\+\_\+\+F\+\_\+edge@{add\+\_\+\+F\+\_\+edge}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+\+F\+\_\+edge(edge\+\_\+2d e)}{add_F_edge(edge_2d e)}}]{\setlength{\rightskip}{0pt plus 5cm}void object\+\_\+2d\+::add\+\_\+\+F\+\_\+edge (
+\begin{DoxyParamCaption}
+\item[{{\bf edge\+\_\+2d}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_ac6449512672c0ff45ca163c374b85466}{}\label{classobject__2d_ac6449512672c0ff45ca163c374b85466}
+
+
+function to add an edge in the vector of edges of Front-\/view 
+
+
+
+Definition at line 158 of file object\+\_\+2d.\+cpp.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!add\+\_\+\+F\+\_\+vertex@{add\+\_\+\+F\+\_\+vertex}}
+\index{add\+\_\+\+F\+\_\+vertex@{add\+\_\+\+F\+\_\+vertex}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+\+F\+\_\+vertex(vertex\+\_\+2d v)}{add_F_vertex(vertex_2d v)}}]{\setlength{\rightskip}{0pt plus 5cm}void object\+\_\+2d\+::add\+\_\+\+F\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex\+\_\+2d}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_af46c50b2bcb0fd9188b35b818c960e8d}{}\label{classobject__2d_af46c50b2bcb0fd9188b35b818c960e8d}
+
+
+function to add a vertex in the vector of vertices of Front-\/view 
+
+
+
+Definition at line 140 of file object\+\_\+2d.\+cpp.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!add\+\_\+\+S\+\_\+edge@{add\+\_\+\+S\+\_\+edge}}
+\index{add\+\_\+\+S\+\_\+edge@{add\+\_\+\+S\+\_\+edge}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+\+S\+\_\+edge(edge\+\_\+2d e)}{add_S_edge(edge_2d e)}}]{\setlength{\rightskip}{0pt plus 5cm}void object\+\_\+2d\+::add\+\_\+\+S\+\_\+edge (
+\begin{DoxyParamCaption}
+\item[{{\bf edge\+\_\+2d}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_a85c014c6fbb2c21ef42a06711dd0a277}{}\label{classobject__2d_a85c014c6fbb2c21ef42a06711dd0a277}
+
+
+function to add an edge in the vector of edges of Side-\/view 
+
+
+
+Definition at line 164 of file object\+\_\+2d.\+cpp.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!add\+\_\+\+S\+\_\+vertex@{add\+\_\+\+S\+\_\+vertex}}
+\index{add\+\_\+\+S\+\_\+vertex@{add\+\_\+\+S\+\_\+vertex}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+\+S\+\_\+vertex(vertex\+\_\+2d v)}{add_S_vertex(vertex_2d v)}}]{\setlength{\rightskip}{0pt plus 5cm}void object\+\_\+2d\+::add\+\_\+\+S\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex\+\_\+2d}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_a49f8d6d9a110979ac19eb40817d4d0ca}{}\label{classobject__2d_a49f8d6d9a110979ac19eb40817d4d0ca}
+
+
+function to add a vertex in the vector of vertices of Side-\/view 
+
+
+
+Definition at line 146 of file object\+\_\+2d.\+cpp.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!add\+\_\+\+T\+\_\+edge@{add\+\_\+\+T\+\_\+edge}}
+\index{add\+\_\+\+T\+\_\+edge@{add\+\_\+\+T\+\_\+edge}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+\+T\+\_\+edge(edge\+\_\+2d e)}{add_T_edge(edge_2d e)}}]{\setlength{\rightskip}{0pt plus 5cm}void object\+\_\+2d\+::add\+\_\+\+T\+\_\+edge (
+\begin{DoxyParamCaption}
+\item[{{\bf edge\+\_\+2d}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_adfe9c8ca6c38cf14338c1e37bb4fcc1f}{}\label{classobject__2d_adfe9c8ca6c38cf14338c1e37bb4fcc1f}
+
+
+function to add an edge in the vector of edges of Top-\/view 
+
+
+
+Definition at line 152 of file object\+\_\+2d.\+cpp.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!add\+\_\+\+T\+\_\+vertex@{add\+\_\+\+T\+\_\+vertex}}
+\index{add\+\_\+\+T\+\_\+vertex@{add\+\_\+\+T\+\_\+vertex}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+\+T\+\_\+vertex(vertex\+\_\+2d v)}{add_T_vertex(vertex_2d v)}}]{\setlength{\rightskip}{0pt plus 5cm}void object\+\_\+2d\+::add\+\_\+\+T\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex\+\_\+2d}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_a900bb547b93a4c92f3daf3acaf580333}{}\label{classobject__2d_a900bb547b93a4c92f3daf3acaf580333}
+
+
+function to add a vertex in the vector of vertices of Top-\/view 
+
+
+
+Definition at line 134 of file object\+\_\+2d.\+cpp.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!checker@{checker}}
+\index{checker@{checker}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{checker(edge\+\_\+3d e)}{checker(edge_3d e)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ bool $>$ object\+\_\+2d\+::checker (
+\begin{DoxyParamCaption}
+\item[{{\bf edge\+\_\+3d}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_a7c2ffd764cf62444bdffdda7abef652c}{}\label{classobject__2d_a7c2ffd764cf62444bdffdda7abef652c}
+
+
+function to check that an edge in 3D is also an edge in top ,front and side views 
+
+
+
+Definition at line 195 of file object\+\_\+2d.\+cpp.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!converter@{converter}}
+\index{converter@{converter}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{converter(vertex\+\_\+3d v)}{converter(vertex_3d v)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf vertex\+\_\+2d} $>$ object\+\_\+2d\+::converter (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex\+\_\+3d}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classobject__2d_a68a06e7feae6a6cae1803f54b8a3a07b}{}\label{classobject__2d_a68a06e7feae6a6cae1803f54b8a3a07b}
+
+
+function to convert 3D vertex to 2D vertex and returns in the form of (v\+\_\+T,v\+\_\+F,v\+\_\+S) 
+
+
+
+Definition at line 175 of file object\+\_\+2d.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{object\+\_\+2d@{object\+\_\+2d}!F\+\_\+edges@{F\+\_\+edges}}
+\index{F\+\_\+edges@{F\+\_\+edges}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{F\+\_\+edges}{F_edges}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf edge\+\_\+2d}$>$ object\+\_\+2d\+::\+F\+\_\+edges}\hypertarget{classobject__2d_abb23f1e7a00cef6deba5d997ff40a751}{}\label{classobject__2d_abb23f1e7a00cef6deba5d997ff40a751}
+
+
+vector of edges in front-\/view 
+
+
+
+Definition at line 18 of file object\+\_\+2d.\+h.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!F\+\_\+vertices@{F\+\_\+vertices}}
+\index{F\+\_\+vertices@{F\+\_\+vertices}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{F\+\_\+vertices}{F_vertices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf vertex\+\_\+2d}$>$ object\+\_\+2d\+::\+F\+\_\+vertices}\hypertarget{classobject__2d_aa12b4ac9f646748a83b22c7a81ff1b7c}{}\label{classobject__2d_aa12b4ac9f646748a83b22c7a81ff1b7c}
+
+
+vector of co-\/ordinates of vertices in front-\/view 
+
+
+
+Definition at line 15 of file object\+\_\+2d.\+h.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!S\+\_\+edges@{S\+\_\+edges}}
+\index{S\+\_\+edges@{S\+\_\+edges}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{S\+\_\+edges}{S_edges}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf edge\+\_\+2d}$>$ object\+\_\+2d\+::\+S\+\_\+edges}\hypertarget{classobject__2d_ad13cc39539ebc9c5634ae59dea81e33c}{}\label{classobject__2d_ad13cc39539ebc9c5634ae59dea81e33c}
+
+
+vector of edges in side-\/view 
+
+
+
+Definition at line 19 of file object\+\_\+2d.\+h.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!S\+\_\+vertices@{S\+\_\+vertices}}
+\index{S\+\_\+vertices@{S\+\_\+vertices}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{S\+\_\+vertices}{S_vertices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf vertex\+\_\+2d}$>$ object\+\_\+2d\+::\+S\+\_\+vertices}\hypertarget{classobject__2d_a722b0505e408b8864809a7ae55c86df4}{}\label{classobject__2d_a722b0505e408b8864809a7ae55c86df4}
+
+
+vector of co-\/ordinates of vertices in side-\/view 
+
+
+
+Definition at line 16 of file object\+\_\+2d.\+h.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!T\+\_\+edges@{T\+\_\+edges}}
+\index{T\+\_\+edges@{T\+\_\+edges}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{T\+\_\+edges}{T_edges}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf edge\+\_\+2d}$>$ object\+\_\+2d\+::\+T\+\_\+edges}\hypertarget{classobject__2d_a1543063eb017187a7582821d1ec07faf}{}\label{classobject__2d_a1543063eb017187a7582821d1ec07faf}
+
+
+vector of edges in top-\/view 
+
+
+
+Definition at line 17 of file object\+\_\+2d.\+h.
+
+\index{object\+\_\+2d@{object\+\_\+2d}!T\+\_\+vertices@{T\+\_\+vertices}}
+\index{T\+\_\+vertices@{T\+\_\+vertices}!object\+\_\+2d@{object\+\_\+2d}}
+\subsubsection[{\texorpdfstring{T\+\_\+vertices}{T_vertices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf vertex\+\_\+2d}$>$ object\+\_\+2d\+::\+T\+\_\+vertices}\hypertarget{classobject__2d_aedcad81ef4cdb308ffade7bcf7de4cc2}{}\label{classobject__2d_aedcad81ef4cdb308ffade7bcf7de4cc2}
+
+
+vector of co-\/ordinates of vertices in top-\/view 
+
+
+
+Definition at line 14 of file object\+\_\+2d.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{object__2d_8h}{object\+\_\+2d.\+h}\item 
+/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/\hyperlink{object__2d_8cpp}{object\+\_\+2d.\+cpp}\end{DoxyCompactItemize}

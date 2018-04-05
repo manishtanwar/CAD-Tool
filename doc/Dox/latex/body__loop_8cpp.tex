@@ -1,0 +1,176 @@
+\hypertarget{body__loop_8cpp}{}\section{/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/body\+\_\+loop.cpp File Reference}
+\label{body__loop_8cpp}\index{/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/body\+\_\+loop.\+cpp@{/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/body\+\_\+loop.\+cpp}}
+{\ttfamily \#include \char`\"{}include/faceloop\+\_\+generator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}include/general\+\_\+methods.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}include/planar\+\_\+graph\+\_\+generator.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}include/body\+\_\+loop.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+Include dependency graph for body\+\_\+loop.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{body__loop_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{body__loop_8cpp_a71064b70dc7b2e65c2aa8a0555cf2efd}{epsil}~0.\+000001
+\item 
+\#define \hyperlink{body__loop_8cpp_a598a3330b3c21701223ee0ca14316eca}{PI}~3.\+14159265
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classbody__loop}{body\+\_\+loop} $>$ \hyperlink{body__loop_8cpp_a230720d5c9d1a2805c6c743287d28d5b}{generate\+\_\+body\+\_\+loop} (std\+::vector$<$ \hyperlink{classface__loop}{face\+\_\+loop} $>$ face\+\_\+loop\+\_\+list, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\item 
+pair$<$ int, bool $>$ \hyperlink{body__loop_8cpp_a85f5918713a8c62784797c5766195628}{successive\+\_\+face\+\_\+loop} (std\+::vector$<$ \hyperlink{classface__loop}{face\+\_\+loop} $>$ face\+\_\+loop\+\_\+list, \hyperlink{classface__loop}{face\+\_\+loop} fl, int fl\+\_\+int, bool side, \hyperlink{classedge__3d}{edge\+\_\+3d} e, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list, bool inner\+\_\+basic)
+\item 
+void \hyperlink{body__loop_8cpp_af9a0c6603771f19b48cb31a570811386}{initialize\+\_\+side\+\_\+used} (std\+::vector$<$ pair$<$ bool, bool $>$ $>$ \&side\+\_\+used)
+\begin{DoxyCompactList}\small\item\em function that initializes side\+\_\+used for both sides + and -\/ for every body loop \end{DoxyCompactList}\item 
+bool \hyperlink{body__loop_8cpp_aad211473d1c05d9bfce31774964bbd9a}{check\+\_\+legality} (\hyperlink{classbody__loop}{body\+\_\+loop} bl)
+\begin{DoxyCompactList}\small\item\em function that checks that if a body part generated is legal or not \end{DoxyCompactList}\item 
+bool \hyperlink{body__loop_8cpp_a68ebe3fd8487bbca7800bd67b4386970}{inner\+\_\+outer} (\hyperlink{classbody__loop}{body\+\_\+loop} bp, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function that determines if give body loop is inner or outer \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{body__loop_8cpp_ad8e1589cd5ef438b41ebcce9fc970049}{get\+\_\+ray\+\_\+l} (\hyperlink{classplane}{plane} p1, \hyperlink{classplane}{plane} p2, bool s1, bool s2)
+\begin{DoxyCompactList}\small\item\em function that determines vector along ray l = /$\vert$n1$\vert$ + /$\vert$n2$\vert$, where @ is the corresponding side \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}!epsil@{epsil}}
+\index{epsil@{epsil}!body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}}
+\subsubsection[{\texorpdfstring{epsil}{epsil}}]{\setlength{\rightskip}{0pt plus 5cm}\#define epsil~0.\+000001}\hypertarget{body__loop_8cpp_a71064b70dc7b2e65c2aa8a0555cf2efd}{}\label{body__loop_8cpp_a71064b70dc7b2e65c2aa8a0555cf2efd}
+
+
+Definition at line 6 of file body\+\_\+loop.\+cpp.
+
+\index{body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}!PI@{PI}}
+\index{PI@{PI}!body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}}
+\subsubsection[{\texorpdfstring{PI}{PI}}]{\setlength{\rightskip}{0pt plus 5cm}\#define PI~3.\+14159265}\hypertarget{body__loop_8cpp_a598a3330b3c21701223ee0ca14316eca}{}\label{body__loop_8cpp_a598a3330b3c21701223ee0ca14316eca}
+
+
+Definition at line 7 of file body\+\_\+loop.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\index{body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}!check\+\_\+legality@{check\+\_\+legality}}
+\index{check\+\_\+legality@{check\+\_\+legality}!body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}}
+\subsubsection[{\texorpdfstring{check\+\_\+legality(body\+\_\+loop bl)}{check_legality(body_loop bl)}}]{\setlength{\rightskip}{0pt plus 5cm}bool check\+\_\+legality (
+\begin{DoxyParamCaption}
+\item[{{\bf body\+\_\+loop}}]{bl}
+\end{DoxyParamCaption}
+)}\hypertarget{body__loop_8cpp_aad211473d1c05d9bfce31774964bbd9a}{}\label{body__loop_8cpp_aad211473d1c05d9bfce31774964bbd9a}
+
+
+function that checks that if a body part generated is legal or not 
+
+
+
+Definition at line 160 of file body\+\_\+loop.\+cpp.
+
+\index{body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}!generate\+\_\+body\+\_\+loop@{generate\+\_\+body\+\_\+loop}}
+\index{generate\+\_\+body\+\_\+loop@{generate\+\_\+body\+\_\+loop}!body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}}
+\subsubsection[{\texorpdfstring{generate\+\_\+body\+\_\+loop(std\+::vector$<$ face\+\_\+loop $>$ face\+\_\+loop\+\_\+list, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{generate_body_loop(std::vector< face_loop > face_loop_list, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf body\+\_\+loop} $>$ generate\+\_\+body\+\_\+loop (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf face\+\_\+loop} $>$}]{face\+\_\+loop\+\_\+list, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{body__loop_8cpp_a230720d5c9d1a2805c6c743287d28d5b}{}\label{body__loop_8cpp_a230720d5c9d1a2805c6c743287d28d5b}
+
+\begin{DoxyParams}{Parameters}
+{\em face\+\_\+loop\+\_\+list} & list of all face loops generated for the reconstruction \\
+\hline
+{\em v3d\+\_\+list} & vector of the 3d-\/vertices of the 3D object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file body\+\_\+loop.\+cpp.
+
+\index{body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}!get\+\_\+ray\+\_\+l@{get\+\_\+ray\+\_\+l}}
+\index{get\+\_\+ray\+\_\+l@{get\+\_\+ray\+\_\+l}!body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}}
+\subsubsection[{\texorpdfstring{get\+\_\+ray\+\_\+l(plane p1, plane p2, bool s1, bool s2)}{get_ray_l(plane p1, plane p2, bool s1, bool s2)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ get\+\_\+ray\+\_\+l (
+\begin{DoxyParamCaption}
+\item[{{\bf plane}}]{p1, }
+\item[{{\bf plane}}]{p2, }
+\item[{bool}]{s1, }
+\item[{bool}]{s2}
+\end{DoxyParamCaption}
+)}\hypertarget{body__loop_8cpp_ad8e1589cd5ef438b41ebcce9fc970049}{}\label{body__loop_8cpp_ad8e1589cd5ef438b41ebcce9fc970049}
+
+
+function that determines vector along ray l = /$\vert$n1$\vert$ + /$\vert$n2$\vert$, where @ is the corresponding side 
+
+
+
+Definition at line 187 of file body\+\_\+loop.\+cpp.
+
+\index{body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}!initialize\+\_\+side\+\_\+used@{initialize\+\_\+side\+\_\+used}}
+\index{initialize\+\_\+side\+\_\+used@{initialize\+\_\+side\+\_\+used}!body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}}
+\subsubsection[{\texorpdfstring{initialize\+\_\+side\+\_\+used(std\+::vector$<$ pair$<$ bool, bool $>$ $>$ \&side\+\_\+used)}{initialize_side_used(std::vector< pair< bool, bool > > &side_used)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialize\+\_\+side\+\_\+used (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ pair$<$ bool, bool $>$ $>$ \&}]{side\+\_\+used}
+\end{DoxyParamCaption}
+)}\hypertarget{body__loop_8cpp_af9a0c6603771f19b48cb31a570811386}{}\label{body__loop_8cpp_af9a0c6603771f19b48cb31a570811386}
+
+
+function that initializes side\+\_\+used for both sides + and -\/ for every body loop 
+
+
+
+Definition at line 152 of file body\+\_\+loop.\+cpp.
+
+\index{body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}!inner\+\_\+outer@{inner\+\_\+outer}}
+\index{inner\+\_\+outer@{inner\+\_\+outer}!body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}}
+\subsubsection[{\texorpdfstring{inner\+\_\+outer(body\+\_\+loop bp, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{inner_outer(body_loop bp, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}bool inner\+\_\+outer (
+\begin{DoxyParamCaption}
+\item[{{\bf body\+\_\+loop}}]{bp, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{body__loop_8cpp_a68ebe3fd8487bbca7800bd67b4386970}{}\label{body__loop_8cpp_a68ebe3fd8487bbca7800bd67b4386970}
+
+
+function that determines if give body loop is inner or outer 
+
+
+
+Definition at line 180 of file body\+\_\+loop.\+cpp.
+
+\index{body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}!successive\+\_\+face\+\_\+loop@{successive\+\_\+face\+\_\+loop}}
+\index{successive\+\_\+face\+\_\+loop@{successive\+\_\+face\+\_\+loop}!body\+\_\+loop.\+cpp@{body\+\_\+loop.\+cpp}}
+\subsubsection[{\texorpdfstring{successive\+\_\+face\+\_\+loop(std\+::vector$<$ face\+\_\+loop $>$ face\+\_\+loop\+\_\+list, face\+\_\+loop fl, int fl\+\_\+int, bool side, edge\+\_\+3d e, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list, bool inner\+\_\+basic)}{successive_face_loop(std::vector< face_loop > face_loop_list, face_loop fl, int fl_int, bool side, edge_3d e, std::vector< vertex_3d > v3d_list, bool inner_basic)}}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$int,bool$>$ successive\+\_\+face\+\_\+loop (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf face\+\_\+loop} $>$}]{face\+\_\+loop\+\_\+list, }
+\item[{{\bf face\+\_\+loop}}]{fl, }
+\item[{int}]{fl\+\_\+int, }
+\item[{bool}]{side, }
+\item[{{\bf edge\+\_\+3d}}]{e, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list, }
+\item[{bool}]{inner\+\_\+basic}
+\end{DoxyParamCaption}
+)}\hypertarget{body__loop_8cpp_a85f5918713a8c62784797c5766195628}{}\label{body__loop_8cpp_a85f5918713a8c62784797c5766195628}
+
+\begin{DoxyParams}{Parameters}
+{\em face\+\_\+loop\+\_\+list} & list of all face loops of the object \\
+\hline
+{\em fl} & face loop for which successive face loop is being found \\
+\hline
+{\em side} & side of the face loop (i.\+e + or -\/) \\
+\hline
+{\em e} & edge of the face loop fl at which successive face loop has to be found \\
+\hline
+{\em e\+\_\+vector} & 3$\ast$1 vector for direction of the edge e \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of successive face loop and its side 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file body\+\_\+loop.\+cpp.
+

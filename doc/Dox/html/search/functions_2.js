@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['check_5flegality',['check_legality',['../body__loop_8h.html#a0378c493f0dba980e5de09d11f03f447',1,'check_legality(body_loop bp):&#160;body_loop.cpp'],['../planar__graph__generator_8h.html#acd37db477f3dd31a46790f5a7ded851c',1,'check_legality(Full_plane &amp;f, std::vector&lt; std::vector&lt; int &gt; &gt; adj_list):&#160;planar_graph_generator.cpp'],['../body__loop_8cpp.html#aad211473d1c05d9bfce31774964bbd9a',1,'check_legality(body_loop bl):&#160;body_loop.cpp'],['../planar__graph__generator_8cpp.html#acd37db477f3dd31a46790f5a7ded851c',1,'check_legality(Full_plane &amp;f, std::vector&lt; std::vector&lt; int &gt; &gt; adj_list):&#160;planar_graph_generator.cpp']]],
+  ['checker',['checker',['../classobject__2d.html#a7c2ffd764cf62444bdffdda7abef652c',1,'object_2d']]],
+  ['compare',['compare',['../_object__3d_8cpp.html#a673d29e725926b7f236de4cac8549fb2',1,'Object_3d.cpp']]],
+  ['compare_5fangles',['compare_angles',['../faceloop__generator_8cpp.html#a67ea41ab7b651bc5783a4a43a9e1eaea',1,'faceloop_generator.cpp']]],
+  ['construct_5fplanes',['construct_planes',['../planar__graph__generator_8h.html#a8d89f969b47445ac1b5b0cf170401cf1',1,'construct_planes(std::vector&lt; vertex_3d &gt; v3d_list, std::vector&lt; edge_3d &gt; e3d_list, std::vector&lt; std::vector&lt; int &gt; &gt; adj_list):&#160;planar_graph_generator.cpp'],['../planar__graph__generator_8cpp.html#a8d89f969b47445ac1b5b0cf170401cf1',1,'construct_planes(std::vector&lt; vertex_3d &gt; v3d_list, std::vector&lt; edge_3d &gt; e3d_list, std::vector&lt; std::vector&lt; int &gt; &gt; adj_list):&#160;planar_graph_generator.cpp']]],
+  ['converter',['converter',['../classobject__2d.html#a68a06e7feae6a6cae1803f54b8a3a07b',1,'object_2d']]],
+  ['cross_5fproduct',['cross_product',['../general__methods_8h.html#a2dc9a47107e3f17fb944f6077f942236',1,'cross_product(vertex_3d a, vertex_3d b):&#160;general_methods.cpp'],['../general__methods_8cpp.html#a2dc9a47107e3f17fb944f6077f942236',1,'cross_product(vertex_3d a, vertex_3d b):&#160;general_methods.cpp']]]
+];

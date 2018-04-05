@@ -1,0 +1,199 @@
+\hypertarget{class_full__plane}{}\section{Full\+\_\+plane Class Reference}
+\label{class_full__plane}\index{Full\+\_\+plane@{Full\+\_\+plane}}
+
+
+{\ttfamily \#include $<$Full\+\_\+plane.\+h$>$}
+
+
+
+Collaboration diagram for Full\+\_\+plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_full__plane__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_full__plane_adc74c83d8c266176e717e54aff561a63}{Full\+\_\+plane} (\hyperlink{classplane}{plane} \hyperlink{class_full__plane_ad65bd61131d3c78d146592919a43fc3e}{p}, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list, std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ e3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_full__plane_a2dc5c95254d2537c62f6616418f53b6b}{Full\+\_\+plane} (\hyperlink{classplane}{plane} \hyperlink{class_full__plane_ad65bd61131d3c78d146592919a43fc3e}{p})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_full__plane_ad46ab0d796a3bfc10e7e8f4c2fa85bfc}{v\+\_\+on\+\_\+this\+\_\+plane} (\hyperlink{classvertex__3d}{vertex\+\_\+3d} v)
+\begin{DoxyCompactList}\small\item\em function to check if the vertex v is on this plane or not \end{DoxyCompactList}\item 
+bool \hyperlink{class_full__plane_a3bcb8b532890ad5b4abc7ed270b039de}{e\+\_\+on\+\_\+this\+\_\+plane} (\hyperlink{classvertex__3d}{vertex\+\_\+3d} v1, \hyperlink{classvertex__3d}{vertex\+\_\+3d} v2)
+\begin{DoxyCompactList}\small\item\em function to check if the edge e is on this plane or not \end{DoxyCompactList}\item 
+void \hyperlink{class_full__plane_a02b7ba0ae30cc09e077ac6d4b46a2db2}{add\+\_\+vertices} (std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function to add the vertices which are on this plane \end{DoxyCompactList}\item 
+void \hyperlink{class_full__plane_a155473c38443048865b1be6346cd011e}{add\+\_\+edges} (std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ e3d\+\_\+list, std\+::vector$<$ \hyperlink{classvertex__3d}{vertex\+\_\+3d} $>$ v3d\+\_\+list)
+\begin{DoxyCompactList}\small\item\em function to add the edges which are on this plane \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplane}{plane} \hyperlink{class_full__plane_ad65bd61131d3c78d146592919a43fc3e}{p}
+\begin{DoxyCompactList}\small\item\em equation of plane i.\+e (a,b,c,d) for ax + by + cz + d = 0 \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{class_full__plane_a0b93d1b5a72f3fb83808edfce3bbcd1b}{vertices\+\_\+on\+\_\+it}
+\begin{DoxyCompactList}\small\item\em vector of enum of vertices which are on this plane \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classedge__3d}{edge\+\_\+3d} $>$ \hyperlink{class_full__plane_a88e6924e5ae6ef5ed92611ff849be290}{edges\+\_\+on\+\_\+it}
+\begin{DoxyCompactList}\small\item\em vector of edges which are on this plane \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Full\+\_\+plane.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Full\+\_\+plane@{Full\+\_\+plane}!Full\+\_\+plane@{Full\+\_\+plane}}
+\index{Full\+\_\+plane@{Full\+\_\+plane}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{Full\+\_\+plane(plane p, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list, std\+::vector$<$ edge\+\_\+3d $>$ e3d\+\_\+list)}{Full_plane(plane p, std::vector< vertex_3d > v3d_list, std::vector< edge_3d > e3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}Full\+\_\+plane\+::\+Full\+\_\+plane (
+\begin{DoxyParamCaption}
+\item[{{\bf plane}}]{p, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list, }
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$}]{e3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{class_full__plane_adc74c83d8c266176e717e54aff561a63}{}\label{class_full__plane_adc74c83d8c266176e717e54aff561a63}
+
+
+Constructor. 
+
+
+
+Definition at line 7 of file Full\+\_\+plane.\+cpp.
+
+\index{Full\+\_\+plane@{Full\+\_\+plane}!Full\+\_\+plane@{Full\+\_\+plane}}
+\index{Full\+\_\+plane@{Full\+\_\+plane}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{Full\+\_\+plane(plane p)}{Full_plane(plane p)}}]{\setlength{\rightskip}{0pt plus 5cm}Full\+\_\+plane\+::\+Full\+\_\+plane (
+\begin{DoxyParamCaption}
+\item[{{\bf plane}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{class_full__plane_a2dc5c95254d2537c62f6616418f53b6b}{}\label{class_full__plane_a2dc5c95254d2537c62f6616418f53b6b}
+
+
+Constructor. 
+
+
+
+Definition at line 20 of file Full\+\_\+plane.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Full\+\_\+plane@{Full\+\_\+plane}!add\+\_\+edges@{add\+\_\+edges}}
+\index{add\+\_\+edges@{add\+\_\+edges}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{add\+\_\+edges(std\+::vector$<$ edge\+\_\+3d $>$ e3d\+\_\+list, std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{add_edges(std::vector< edge_3d > e3d_list, std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}void Full\+\_\+plane\+::add\+\_\+edges (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf edge\+\_\+3d} $>$}]{e3d\+\_\+list, }
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{class_full__plane_a155473c38443048865b1be6346cd011e}{}\label{class_full__plane_a155473c38443048865b1be6346cd011e}
+
+
+function to add the edges which are on this plane 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\+\_\+list} & edge list of 3D object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file Full\+\_\+plane.\+cpp.
+
+\index{Full\+\_\+plane@{Full\+\_\+plane}!add\+\_\+vertices@{add\+\_\+vertices}}
+\index{add\+\_\+vertices@{add\+\_\+vertices}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{add\+\_\+vertices(std\+::vector$<$ vertex\+\_\+3d $>$ v3d\+\_\+list)}{add_vertices(std::vector< vertex_3d > v3d_list)}}]{\setlength{\rightskip}{0pt plus 5cm}void Full\+\_\+plane\+::add\+\_\+vertices (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf vertex\+\_\+3d} $>$}]{v3d\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{class_full__plane_a02b7ba0ae30cc09e077ac6d4b46a2db2}{}\label{class_full__plane_a02b7ba0ae30cc09e077ac6d4b46a2db2}
+
+
+function to add the vertices which are on this plane 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\+\_\+list} & vertex list of 3D object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Full\+\_\+plane.\+cpp.
+
+\index{Full\+\_\+plane@{Full\+\_\+plane}!e\+\_\+on\+\_\+this\+\_\+plane@{e\+\_\+on\+\_\+this\+\_\+plane}}
+\index{e\+\_\+on\+\_\+this\+\_\+plane@{e\+\_\+on\+\_\+this\+\_\+plane}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{e\+\_\+on\+\_\+this\+\_\+plane(vertex\+\_\+3d v1, vertex\+\_\+3d v2)}{e_on_this_plane(vertex_3d v1, vertex_3d v2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Full\+\_\+plane\+::e\+\_\+on\+\_\+this\+\_\+plane (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex\+\_\+3d}}]{v1, }
+\item[{{\bf vertex\+\_\+3d}}]{v2}
+\end{DoxyParamCaption}
+)}\hypertarget{class_full__plane_a3bcb8b532890ad5b4abc7ed270b039de}{}\label{class_full__plane_a3bcb8b532890ad5b4abc7ed270b039de}
+
+
+function to check if the edge e is on this plane or not 
+
+
+
+Definition at line 37 of file Full\+\_\+plane.\+cpp.
+
+\index{Full\+\_\+plane@{Full\+\_\+plane}!v\+\_\+on\+\_\+this\+\_\+plane@{v\+\_\+on\+\_\+this\+\_\+plane}}
+\index{v\+\_\+on\+\_\+this\+\_\+plane@{v\+\_\+on\+\_\+this\+\_\+plane}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{v\+\_\+on\+\_\+this\+\_\+plane(vertex\+\_\+3d v)}{v_on_this_plane(vertex_3d v)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Full\+\_\+plane\+::v\+\_\+on\+\_\+this\+\_\+plane (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex\+\_\+3d}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{class_full__plane_ad46ab0d796a3bfc10e7e8f4c2fa85bfc}{}\label{class_full__plane_ad46ab0d796a3bfc10e7e8f4c2fa85bfc}
+
+
+function to check if the vertex v is on this plane or not 
+
+
+
+Definition at line 27 of file Full\+\_\+plane.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Full\+\_\+plane@{Full\+\_\+plane}!edges\+\_\+on\+\_\+it@{edges\+\_\+on\+\_\+it}}
+\index{edges\+\_\+on\+\_\+it@{edges\+\_\+on\+\_\+it}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{edges\+\_\+on\+\_\+it}{edges_on_it}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf edge\+\_\+3d}$>$ Full\+\_\+plane\+::edges\+\_\+on\+\_\+it}\hypertarget{class_full__plane_a88e6924e5ae6ef5ed92611ff849be290}{}\label{class_full__plane_a88e6924e5ae6ef5ed92611ff849be290}
+
+
+vector of edges which are on this plane 
+
+
+
+Definition at line 20 of file Full\+\_\+plane.\+h.
+
+\index{Full\+\_\+plane@{Full\+\_\+plane}!p@{p}}
+\index{p@{p}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{p}{p}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plane} Full\+\_\+plane\+::p}\hypertarget{class_full__plane_ad65bd61131d3c78d146592919a43fc3e}{}\label{class_full__plane_ad65bd61131d3c78d146592919a43fc3e}
+
+
+equation of plane i.\+e (a,b,c,d) for ax + by + cz + d = 0 
+
+
+
+Definition at line 16 of file Full\+\_\+plane.\+h.
+
+\index{Full\+\_\+plane@{Full\+\_\+plane}!vertices\+\_\+on\+\_\+it@{vertices\+\_\+on\+\_\+it}}
+\index{vertices\+\_\+on\+\_\+it@{vertices\+\_\+on\+\_\+it}!Full\+\_\+plane@{Full\+\_\+plane}}
+\subsubsection[{\texorpdfstring{vertices\+\_\+on\+\_\+it}{vertices_on_it}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ Full\+\_\+plane\+::vertices\+\_\+on\+\_\+it}\hypertarget{class_full__plane_a0b93d1b5a72f3fb83808edfce3bbcd1b}{}\label{class_full__plane_a0b93d1b5a72f3fb83808edfce3bbcd1b}
+
+
+vector of enum of vertices which are on this plane 
+
+
+
+Definition at line 18 of file Full\+\_\+plane.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_full__plane_8h}{Full\+\_\+plane.\+h}\item 
+/home/manish/\+Desktop/\+Manish\+\_\+\+C\+A\+D\+\_\+\+Tool/src/\hyperlink{_full__plane_8cpp}{Full\+\_\+plane.\+cpp}\end{DoxyCompactItemize}
