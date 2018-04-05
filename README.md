@@ -17,13 +17,13 @@ Projections of 3D objects and reconstruction of 3D object from given projections
 	make
 
 
-##Input/Output Format##
+## Input/Output Format ##
 
-###3D to 2D
+### 3D to 2D
 
-####Input
+#### Input
 
-######Provide 3D object description in *.txt* file in the below format:-######
+###### Provide 3D object description in *.txt* file in the below format:- ######
 	
 	N    -> no of vertices
 
@@ -43,15 +43,15 @@ Projections of 3D objects and reconstruction of 3D object from given projections
 	..
 
 
-####Output
+#### Output
 
 * Application generates output in a window which appears after clicking button in gui.
 
-###2D to 3D
+### 2D to 3D
 
-###Input
+### Input
 
-######Provide 2D object in *.txt* format as follows:-######
+###### Provide 2D object in *.txt* format as follows:- ######
 	N   			 -> no of vertices
 
 	t1.x t2.y t3.z   -> top view projection of v1      |
@@ -81,7 +81,7 @@ Projections of 3D objects and reconstruction of 3D object from given projections
 	....
 	..
 
-###Output
+### Output
 
 * Application generates output in  *.obj* file (filename of your choice).
 
@@ -94,13 +94,13 @@ Projections of 3D objects and reconstruction of 3D object from given projections
 		f ...
 		...
 
-###obj viewer
+### obj viewer
 
-* For Linux   -> 
-* For Windows -> Print 3D
+* For Linux   -> G3DViewer (to install - sudo apt-get install g3dviewer)
 * Online      -> **[Online 3D Viewer](https://3dviewer.net/)**
+* For Windows -> Print 3D (default in windows 10)
 
-##Authors##
+## Authors ##
 
 * **[Manish Tanwar](https://github.com/manishtanwar/)**
 * **[Abhinash Kumar](https://github.com/sabhi2257)**
