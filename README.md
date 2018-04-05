@@ -1,4 +1,4 @@
-# CAD-Tool# AutoCAD
+# AutoCAD
 Projections of 3D objects and reconstruction of 3D object from given projections
 
 
@@ -12,10 +12,9 @@ Projections of 3D objects and reconstruction of 3D object from given projections
 	in the app folder.
 
 ### Build from sources ####
-```
-qmake CAD.pro
-make
-```
+
+	qmake CAD.pro
+	make
 
 
 ##Input/Output Format##
@@ -39,13 +38,6 @@ make
 	E    -> no of edges
 
 	a b         -> this means that there is an edge between ath vertex and bth vertex
-	....
-	...
-	..
-
-	S    -> no of surfaces
-
-	e1 e2 e3 ... en     -> surface consists of edge e1,....,en
 	....
 	...
 	..
