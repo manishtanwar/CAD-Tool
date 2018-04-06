@@ -34,7 +34,7 @@ And to execute go to bin directory and run the executable or run command:
 The Model has been developed using Qt libraries for c++.
 Use the following command to install qt:
 	
-	sudo apt-get install qt
+	sudo apt-get install qtdeclarative5-dev
 
 ## Input/Output Format ##
 
