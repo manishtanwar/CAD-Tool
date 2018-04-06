@@ -30,7 +30,7 @@ And to execute go to bin directory and run the executable or run command:
 	./CAD_Tool
 	
 	
-## Dependencies for build
+#### Dependencies for building from source
 The project make use of the QT libraries for c++.  
 Use the following command to install qt:
 	
