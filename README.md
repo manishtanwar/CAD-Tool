@@ -123,9 +123,16 @@ Use the following command to install qt:
 
 ### Obj File viewers
 
-* For Windows -> Print 3D (default software for obj in windows 10)
-* For Linux   -> G3DViewer (to install - sudo apt-get install g3dviewer)
-* Online      -> **[Online 3D Viewer](https://3dviewer.net/)**
+* For Windows : Print 3D (default software for obj in windows 10)
+* For Linux   : G3DViewer (to install - sudo apt-get install g3dviewer)
+* Online      : **[Online 3D Viewer](https://3dviewer.net/)**
+
+## Documentation
+
+The documentation of this project is in the doc folder, it contains the following things:
+1. Mathematical Model
+2. UML Diagram
+3. Class Desciption (in the form of html and latex in the dox folder)
 
 ## Authors ##
 
