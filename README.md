@@ -10,17 +10,35 @@ The package have the following functionalities -
 ## Installing
 
 	The app folder contains an AppImage(named CAD_Tool) which can run on Linux systems. 
-	Make the app executable by running 
-
-	chmod a+x CAD_Tool.AppImage 
-
-	in the app folder.
+	Make the app executable by running the following command in the app folder:
+	
+	```
+	chmod a+x CAD_Tool
+	```
+	To execute run the executable or run command:
+	
+	```
+	./CAD_Tool
+	```
 
 ### Build from sources ####
-
+        
+	In the project directory run the following commands:
+	```
 	qmake CAD_Tool.pro
 	make
-
+	```
+	And to execute go to bin directory and run the executable or run command:
+	```
+	./CAD_Tool
+	```
+	
+## Dependencies for build
+	The project make use of the QT libraries for c++.
+	Use the following command to install qt:
+	```
+	sudo apt-get install qt
+	```
 
 ## Input/Output Format ##
 
@@ -105,7 +123,7 @@ The package have the following functionalities -
 		
 		Explanatioon => f 1 3 4 5 1, face contains loop with edges (1,3),(3,4),(4,5),(5,1), the order of the edges decides the direction of the normal of the face and the direction of the normal decides hollowness of the face.
 
-### obj viewer
+### Obj File viewers
 
 * For Windows -> Print 3D (default software for obj in windows 10)
 * For Linux   -> G3DViewer (to install - sudo apt-get install g3dviewer)
