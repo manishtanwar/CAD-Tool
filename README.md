@@ -124,7 +124,7 @@ Use the following command to install qt:
 ### Obj File viewers
 
 * For Windows : Print 3D (default software for obj in windows 10)
-* For Linux   : G3DViewer (to install - sudo apt-get install g3dviewer)
+* For Linux   : G3DViewer (to install run - sudo apt-get install g3dviewer)
 * Online      : **[Online 3D Viewer](https://3dviewer.net/)**
 
 ## Documentation
