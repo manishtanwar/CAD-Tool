@@ -9,7 +9,7 @@ The package have the following functionalities -
 
 ## Installing
 
-The app folder contains an AppImage(named CAD_Tool) which can run on Linux systems.  
+The app folder contains an AppImage(named CAD_Tool) which can run on Linux systems. The Model has been developed using Qt libraries for c++, these are not required to be installed to run the AppImage as the executable is statically linked and deployment ready. The application is built to run on Linux and this is not a cross-platform software.  
 Make the app executable by running the following command in the app folder:
 	
 	chmod a+x CAD_Tool
@@ -18,7 +18,7 @@ To execute run the executable or run command:
 	
 	./CAD_Tool
 
-### Build from sources ####
+## Build from sources ####
         
 In the project directory run the following commands:
 	
@@ -31,7 +31,7 @@ And to execute go to bin directory and run the executable or run command:
 	
 	
 #### Dependencies for building from source
-The project make use of the QT libraries for c++.  
+The Model has been developed using Qt libraries for c++.
 Use the following command to install qt:
 	
 	sudo apt-get install qt
