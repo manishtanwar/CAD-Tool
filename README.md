@@ -9,36 +9,32 @@ The package have the following functionalities -
 
 ## Installing
 
-	The app folder contains an AppImage(named CAD_Tool) which can run on Linux systems. 
-	Make the app executable by running the following command in the app folder:
+The app folder contains an AppImage(named CAD_Tool) which can run on Linux systems.  
+Make the app executable by running the following command in the app folder:
 	
-	```
 	chmod a+x CAD_Tool
-	```
-	To execute run the executable or run command:
 	
-	```
+To execute run the executable or run command:
+	
 	./CAD_Tool
-	```
 
 ### Build from sources ####
         
-	In the project directory run the following commands:
-	```
+In the project directory run the following commands:
+	
 	qmake CAD_Tool.pro
 	make
-	```
-	And to execute go to bin directory and run the executable or run command:
-	```
+	
+And to execute go to bin directory and run the executable or run command:  
+
 	./CAD_Tool
-	```
+	
 	
 ## Dependencies for build
-	The project make use of the QT libraries for c++.
-	Use the following command to install qt:
-	```
+The project make use of the QT libraries for c++.  
+Use the following command to install qt:
+	
 	sudo apt-get install qt
-	```
 
 ## Input/Output Format ##
 
@@ -60,7 +56,7 @@ The package have the following functionalities -
 
 	E    -> number of edges
 
-	a b         -> this means that there is an edge between ath vertex and bth vertex, a and b are 0 indexed
+	a b  -> this means that there is an edge between ath vertex and bth vertex, a and b are 0 indexed
 	....
 	...
 	..
@@ -113,15 +109,17 @@ The package have the following functionalities -
 * Application generates output in  *.obj* file (filename is given as input, file generated in the same directory of the app).
 
 #### Format of *.obj* file ####
-		v x y z    # a vertex => charcter 'v' followed by (x, y, z) coordinates of the point
-		v ...
-		...
+	v x y z    # a vertex => charcter 'v' followed by (x, y, z) coordinates of the point
+	v ...
+	...
 
-		f 1 3 4 5 1    # a face => character 'f' followed by indices(1-indexed) of vertices lying on that face
-		f ...
-		...
-		
-		Explanatioon => f 1 3 4 5 1, face contains loop with edges (1,3),(3,4),(4,5),(5,1), the order of the edges decides the direction of the normal of the face and the direction of the normal decides hollowness of the face.
+	f 1 3 4 5 1    # a face => character 'f' followed by indices(1-indexed) of vertices lying on that face
+	f ...
+	...
+
+	Explanatioon => f 1 3 4 5 1, face contains loop with edges (1,3),(3,4),(4,5),(5,1)  
+	the order of the edges decides the direction of the normal of the face and the direction  
+	of the normal decides hollowness of the face.
 
 ### Obj File viewers
 
